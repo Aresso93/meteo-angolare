@@ -1,7 +1,6 @@
-<div *ngIf="city">
-    
+<div *ngIf="city"> 
     <span>Latitudine: {{city.latitude}}</span> <br>
-    <span>Longitudine: {{city.longitude}}</span>
-   
-
+    <span>Longitudine: {{city.longitude}}</span><br>
+    <span>Fuso orario: {{city.timezone}}</span> <br>
+    <span>Temperatura corrente: {{city.hourly.temperature_2m[0]}}</span>
 </div>

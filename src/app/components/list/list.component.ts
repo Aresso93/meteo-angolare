@@ -11,11 +11,15 @@ export class ListComponent implements OnInit{
 
   city?: Location
 
-  constructor (private data: DataService)  {}
+  constructor (private dataServ: DataService)  {}
 
   ngOnInit():void{
-   this.data.getWeather().subscribe(data =>{
+    console.log(this.city);
+    this.dataServ.getWeather().subscribe(data =>{
     this.city = data;
+    console.log('data', data);
+    console.log('this.city', this.city);
+    
    })
   }
   
