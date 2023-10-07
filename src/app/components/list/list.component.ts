@@ -9,13 +9,13 @@ import { Location } from 'src/app/model/location';
 })
 export class ListComponent implements OnInit{
 
-  locations?: Location
+  city?: Location
 
   constructor (private data: DataService)  {}
 
   ngOnInit():void{
    this.data.getWeather().subscribe(data =>{
-    this.locations = data;
+    this.city = data;
    })
   }
   

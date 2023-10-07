@@ -8,6 +8,6 @@ import { Location } from 'src/app/model/location';
 })
 export class CardComponent {
 
-  @Input() location?: Location;
+  @Input() city?: Location;
 
 }
